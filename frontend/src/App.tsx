@@ -10,6 +10,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import HomePage from "./pages/Home";
 import ProfilePage from "./pages/Profile";
 import BusinessesPage from "./pages/Businesses";
+import ExternalApiPage from "./pages/ExternalApi";
 
 import "./App.css";
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/" exact component={HomePage} />
           <PrivateRoute path="/profile" component={ProfilePage} />
           <PrivateRoute path="/businesses" component={BusinessesPage} />
+          <PrivateRoute path="/external-api" component={ExternalApiPage} />
         </Switch>
       </Container>
       <Footer />
